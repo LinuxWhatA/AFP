@@ -62,7 +62,5 @@ help = {
     "印尼语": "id"
 }
 if __name__ == '__main__':
-    re = youdao_fanyi(input('请输入要翻译的文字：'))
     while True:
-        print(re)
-        re = youdao_fanyi(input('\n请输入要翻译的文字：'))
+        print(youdao_fanyi(input('\n请输入要翻译的文字：')))
