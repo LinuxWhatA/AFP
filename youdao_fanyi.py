@@ -62,18 +62,7 @@ help = {
     "印尼语": "id"
 }
 if __name__ == '__main__':
-    lists = ''
-    for i in sys.argv[1:]:
-        if i.lower() == '--help':
-            input(help)
-            break
-        lists += i + ' '
-    if lists:
-        lists = lists[:-1]
-        requests = youdao_fanyi(lists)
-    else:
-        requests = youdao_fanyi(input('请输入要翻译的文字：'))
-    print(requests)
+    re = youdao_fanyi(input('请输入要翻译的文字：'))
     while True:
-        requests = youdao_fanyi(input('\n请输入要翻译的文字：'))
-        print(requests)
+        print(re)
+        re = youdao_fanyi(input('\n请输入要翻译的文字：'))
