@@ -96,5 +96,3 @@ class Config:
 if __name__ == '__main__':
     names = Namelist('名单.txt')
     config = Config('config.ini')
-    print(config.find('刘志5.思12.doc'))
-    # print(config.list['api']['AppID'])
